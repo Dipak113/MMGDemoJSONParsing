@@ -1,0 +1,17 @@
+version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+options: "f67ad903df454efb53479bd7a6746d10"
+build_time: [1595956671, 845420000]
+inputs:
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/views/BlurView/BlurLoader.swift": [1595940206, 461916843]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/Model/ServerManager.swift": [1595940118, 885913952]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/AppDelegateFiles/AppDelegate.swift": [1595916994, 425108365]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/Controllers/PhotoListCollectioVC.swift": [1595956624, 464334019]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/Model/PhotoListModel.swift": [1595927694, 385126731]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/AppDelegateFiles/SceneDelegate.swift": [1595916994, 451004008]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/Other/ViewExtension.swift": [1593764624, 614311814]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/Controllers/BaseViewController.swift": [1595940076, 182258120]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/views/customcell/CategoryCollectionViewCell.swift": [1595939241, 537607107]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/Other/ImageViewExtension.swift": [1593764656, 796629548]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/ViewModel/PhotoListViewController.swift": [1595956666, 570282003]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/Other/Constants.swift": [1593764516, 114437222]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/MMagicJsonParsing/MMagicJsonParsing/Other/Reachability.swift": [1594975405, 369088121]

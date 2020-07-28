@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NBn-7L-d4L">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Category-->
+        <scene sceneID="c0d-QZ-eV7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NBn-7L-d4L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Category" id="yr9-pM-gUV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zQK-D0-q1B">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g1S-wx-ic3" kind="relationship" relationship="rootViewController" id="M3j-TG-Y68"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6m9-q6-SiH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2341" y="-244"/>
+        </scene>
+        <!--PhotoList-->
+        <scene sceneID="UcL-p8-ksc">
+            <objects>
+                <viewController id="g1S-wx-ic3" customClass="PhotoListCollectioVC" customModule="MMagicJsonParsing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ntS-5F-sPt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5OC-0o-1M3">
+                                <rect key="frame" x="0.0" y="37" width="414" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4ro-fQ-eRW">
+                                    <size key="itemSize" width="153" height="178"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="uz2-yQ-6Cg" customClass="CategoryCollectionViewCell" customModule="MMagicJsonParsing" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="153" height="178"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iHH-kd-deK">
+                                            <rect key="frame" x="0.0" y="0.0" width="153" height="178"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOV-OJ-jSw">
+                                                    <rect key="frame" x="0.0" y="136" width="153" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="Ed7-Lh-hYV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="y2L-Aa-eB3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="153" height="138"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="138" id="Zin-yO-tEj"/>
+                                                        <constraint firstAttribute="width" constant="153" id="eAg-0b-ETH"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="nOV-OJ-jSw" secondAttribute="trailing" id="NAe-49-DWa"/>
+                                                <constraint firstAttribute="bottom" secondItem="nOV-OJ-jSw" secondAttribute="bottom" id="Siv-Hz-f36"/>
+                                                <constraint firstItem="nOV-OJ-jSw" firstAttribute="leading" secondItem="iHH-kd-deK" secondAttribute="leading" id="lFf-5k-lPK"/>
+                                                <constraint firstItem="y2L-Aa-eB3" firstAttribute="centerX" secondItem="iHH-kd-deK" secondAttribute="centerX" id="uIK-wP-ZAM"/>
+                                                <constraint firstItem="y2L-Aa-eB3" firstAttribute="top" secondItem="iHH-kd-deK" secondAttribute="top" id="vAy-Ye-ktl"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="153" height="178"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="y2L-Aa-eB3" id="zaZ-R1-mO3"/>
+                                            <outlet property="nameLabel" destination="nOV-OJ-jSw" id="8OZ-Qo-EaK"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="g1S-wx-ic3" id="0Db-bC-hje"/>
+                                    <outlet property="delegate" destination="g1S-wx-ic3" id="2bx-A8-G9X"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5OC-0o-1M3" firstAttribute="top" secondItem="ntS-5F-sPt" secondAttribute="top" constant="37" id="0kn-M9-bJl"/>
+                            <constraint firstItem="5OC-0o-1M3" firstAttribute="trailing" secondItem="wcr-zc-4ad" secondAttribute="trailing" id="3u0-74-Zk1"/>
+                            <constraint firstAttribute="bottom" secondItem="5OC-0o-1M3" secondAttribute="bottom" constant="17" id="J9j-Jk-LzJ"/>
+                            <constraint firstItem="5OC-0o-1M3" firstAttribute="leading" secondItem="wcr-zc-4ad" secondAttribute="leading" id="g64-nb-MR7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wcr-zc-4ad"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PhotoList" id="cO1-3V-1y2"/>
+                    <connections>
+                        <outlet property="articleCollectionView" destination="5OC-0o-1M3" id="gEi-MO-Ibr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xf-cO-hsK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3127.536231884058" y="-244.41964285714283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="default" width="493" height="391"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_MMagicJsonParsing {
+  umbrella header "Pods-MMagicJsonParsing-umbrella.h"
+
+  export *
+  module * { export * }
+}
